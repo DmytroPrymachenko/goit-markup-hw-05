@@ -975,7 +975,6 @@ body {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-button-svg {
-  position: absolute;
   color: #e7e9fc;
   margin-left: 16px;
 }
