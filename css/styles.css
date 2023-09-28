@@ -876,10 +876,11 @@ body {
   border-color: rgba(46, 47, 66, 0.4);
   padding: 8px 16px 8px 16px;
   width: 100%;
-  outline: none;
+  outline: transparent;
   min-height: 120px;
-  color: #2e2f42;
+
   resize: none;
+  color: rgba(46, 47, 66, 0.4);
 }
 .textarea:focus {
   border-color: #4d5ae5;
