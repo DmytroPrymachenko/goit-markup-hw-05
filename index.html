@@ -385,25 +385,26 @@
         </div>
         <div class="footer-div-input">
           <p class="footer-form-text">Subscribe</p>
-          <div class="footer-div-email">
+          
             <form class="footer-form">
-              <label class="footer-label" for=""></label>
-              <input
+              <label class="footer-label" for="reviews_user_email_footer" ><input
                 class="footer-email"
                 type="email"
                 id="reviews_user_email_footer"
                 name="reviews_user_email_footer"
                 required
                 placeholder="E-mail"
-              />
-            </form>
-            <div>
-              <button type="button" class="footer-button">Subscribe</button>
+              /></label>
+              
+            
+
+            <button type="button" class="footer-button"
+              >Subscribe
               <svg class="footer-button-svg" width="24" height="24">
-                <use fref="./images/icons.svg#icon-plane"></use>
+                <use href="./images/icons.svg#icon-plane1"></use>
               </svg>
-            </div>
-          </div>
+            </button></form>
+          
         </div>
       </div>
     </footer>
@@ -419,11 +420,12 @@
         <!-- Список -->
         <div class="backdrop-modal-div">
           <!-- modal-name -->
+          <form action="">
           <div class="modal_name">
-            <form class="backdrop_form"
-              >Name
+           
+              
 
-              <label class="backdrop_label" for="reviews_user-name"></label>
+              <label class="backdrop_label" for="reviews_user-name">Name</label>
 
               <div class="modal_div">
                 <input
@@ -436,14 +438,13 @@
                 <svg class="modal_div_icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-person-black"></use>
                 </svg> </div
-            ></form>
+            >
           </div>
           <!-- modal-phone -->
           <div class="modal-phone">
-            <form class="backdrop_form"
-              >Phone
+          
 
-              <label class="backdrop_label" for="reviews_user-phone"></label>
+              <label class="backdrop_label" for="reviews_user-phone">Phone</label>
 
               <div class="modal_div">
                 <input
@@ -456,14 +457,13 @@
                 <svg class="modal_div_icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-phone-black"></use>
                 </svg> </div
-            ></form>
+            >
           </div>
           <!-- modal-Email -->
           <div class="modal-email">
-            <form class="backdrop_form"
-              >Email
+            
 
-              <label class="backdrop_label" for="reviews_user-email"></label>
+              <label class="backdrop_label" for="reviews_user-email">Email</label>
 
               <div class="modal_div">
                 <input
@@ -476,14 +476,13 @@
                 <svg class="modal_div_icon" width="18" height="18">
                   <use href="./images/icons.svg#icon-email-black"></use>
                 </svg> </div
-            ></form>
+            >
           </div>
           <!-- modal-Comment -->
           <div class="modal-Comment">
-            <form class="backdrop_form"
-              >Comment
+            
 
-              <label class="backdrop_label" for="reviews_user-comment"></label>
+              <label class="backdrop_label" for="reviews_user-comment">Comment</label>
 
               <div class="modal_div modal_div_comment">
                 <textarea
@@ -494,17 +493,16 @@
                   cols="30"
                   rows="10"
                 ></textarea></div
-            ></form>
+            >
           </div>
-          <div>
+          <div class="checkbox-div">
             <input
-              class="visually-hidden"
-              required
+              class="visually-hidden checkbox-class"
               type="checkbox"
-              name="checkbox-label"
-              id="checkbox-label"
+              name="user_privas"
+              id="user_privas"
             />
-            <label class="checkbox-label">
+            <label class="checkbox-label" for="user_privas">
               <span class="checkbox-span">
                 <svg class="checkbox-svg" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
@@ -517,7 +515,7 @@
           </div>
         </div>
         <!-- Кнопка -->
-        <button type="button" class="hero-button button-modal">Send</button>
+        <button type="button" class="hero-button button-modal">Send</button></form>
       </div>
     </div>
     <script src="./css/modal.js"></script>
