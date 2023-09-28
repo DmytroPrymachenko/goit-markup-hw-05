@@ -385,27 +385,24 @@
         </div>
         <div class="footer-div-input">
           <p class="footer-form-text">Subscribe</p>
-          
-            <form class="footer-form">
-              <label class="footer-label" for="reviews_user_email_footer" >
-                <input
+
+          <form class="footer-form">
+            <label class="footer-label" for="reviews_user_email_footer">
+              <input
                 class="footer-email"
                 type="email"
                 id="reviews_user_email_footer"
                 name="reviews_user_email_footer"
                 required
                 placeholder="E-mail"
-              /></label>
-              
-            
+            /></label>
 
             <button type="submit" class="footer-button"
               >Subscribe
               <svg class="footer-button-svg" width="24" height="24">
                 <use href="./images/icons.svg#icon-plane1"></use>
-              </svg>
-            </button></form>
-          
+              </svg> </button
+          ></form>
         </div>
       </div>
     </footer>
@@ -417,86 +414,77 @@
             <use href="./images/icons.svg#icon-cross"></use>
           </svg>
         </button>
-      
+
         <p class="modal-name-title">Leave your contacts and we will call you back</p>
-       
+
         <!-- Список -->
         <!-- <div class="backdrop-modal-div"> -->
-          <!-- modal-name -->
-          <form class="modal-form" action="">
+        <!-- modal-name -->
+        <form class="modal-form">
           <div class="modal_name">
-           
-              
+            <label class="backdrop_label" for="reviews_user-name">Name</label>
 
-              <label class="backdrop_label " for="reviews_user-name">Name</label>
-
-              <div class="modal_div">
-                <input
-                  class="modal_div_input"
-                  type="text"
-                  id="reviews_user_name"
-                  required
-                  name="reviews_user_name"
-                />
-                <svg class="modal_div_icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg> </div
-            >
+            <div class="modal_div">
+              <input
+                class="modal_div_input"
+                type="text"
+                id="reviews_user_name"
+                required
+                name="reviews_user_name"
+              />
+              <svg class="modal_div_icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
           </div>
           <!-- modal-phone -->
           <div class="modal-phone">
-          
+            <label class="backdrop_label" for="reviews_user-phone">Phone</label>
 
-              <label class="backdrop_label" for="reviews_user-phone">Phone</label>
-
-              <div class="modal_div">
-                <input
-                  class="modal_div_input"
-                  required
-                  type="tel"
-                  id="reviews_user_phone"
-                  name="reviews_user_phone"
-                />
-                <svg class="modal_div_icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg> </div
-            >
+            <div class="modal_div">
+              <input
+                class="modal_div_input"
+                required
+                type="tel"
+                id="reviews_user_phone"
+                name="reviews_user_phone"
+              />
+              <svg class="modal_div_icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
           </div>
           <!-- modal-Email -->
           <div class="modal-email">
-            
+            <label class="backdrop_label" for="reviews_user-email">Email</label>
 
-              <label class="backdrop_label" for="reviews_user-email">Email</label>
-
-              <div class="modal_div">
-                <input
-                  class="modal_div_input"
-                  required
-                  type="email"
-                  id="reviews_user_email"
-                  name="reviews_user_email"
-                />
-                <svg class="modal_div_icon" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email-black"></use>
-                </svg> </div
-            >
+            <div class="modal_div">
+              <input
+                class="modal_div_input"
+                required
+                type="email"
+                id="reviews_user_email"
+                name="reviews_user_email"
+              />
+              <svg class="modal_div_icon" width="18" height="18">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
           </div>
           <!-- modal-Comment -->
           <div class="modal-Comment">
-            
+            <label class="backdrop_label" for="reviews_user-comment">Comment</label>
 
-              <label class="backdrop_label" for="reviews_user-comment">Comment</label>
-
-              <div class="modal_div modal_div_comment">
-                <textarea
-                  class="textarea"
-                  name="modal_textarea"
-                  id="modal_textarea"
-                  placeholder="Text input"
-                  cols="30"
-                  rows="10"
-                ></textarea></div
-            >
+            <div class="modal_div modal_div_comment">
+              <textarea
+                class="textarea"
+                name="modal_textarea"
+                id="modal_textarea"
+                placeholder="Text input"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </div>
           </div>
           <div class="checkbox-div">
             <input
@@ -516,10 +504,10 @@
               ></label
             >
           </div>
-        </div>
-        <!-- Кнопка -->
-        <button type="button" class="hero-button button-modal">Send</button></form>
-      
+          <!-- </div> -->
+          <!-- Кнопка -->
+          <button type="button" class="hero-button button-modal">Send</button>
+        </form>
       </div>
     </div>
     <script src="./css/modal.js"></script>
