@@ -812,6 +812,7 @@ body {
 }
 .backdrop_label {
   display: block;
+  margin-bottom: 4px;
 }
 .backdrop_label {
   color: #8e8f99;
@@ -827,6 +828,8 @@ body {
 .modal_div {
   position: relative;
   margin-top: 4px;
+}
+.modal-div-form {
   margin-bottom: 8px;
 }
 .modal_div_input {
@@ -839,13 +842,18 @@ body {
   border-radius: 4px;
   border: 1px solid;
   border-color: rgba(46, 47, 66, 0.4);
-  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #2e2f42;
+  background-color: transparent;
+  outline: transparent;
 }
 .modal_div_icon {
   position: absolute;
   left: 16px;
   top: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal_div_input:focus {
   border-color: #4d5ae5;
