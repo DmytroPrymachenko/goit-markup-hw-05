@@ -383,8 +383,23 @@
                 </svg> </a></li
           ></ul>
         </div>
+        <div class="footer-div-input">
+          <p class="footer-form-text">Subscribe</p>
+          <div class="footer-div-email">
+            <form class="footer-form" action="">
+              <input class="footer-email" type="email" name="email" required placeholder="E-mail" />
+            </form>
+            <div>
+              <button type="button" class="footer-button">Subscribe</button>
+              <svg class="footer-button-svg" width="24" height="24">
+                <use fref="./images/icons.svg#icon-plane"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
+    <!-- Модальне вікно -->
     <div class="backdrop is-hidden" data-modal>
       <div class="backdrop-modal">
         <button type="button" class="backdrop-button" data-modal-close>
@@ -407,6 +422,7 @@
                   class="modal_div_input"
                   type="text"
                   id="reviews_user_name"
+                  required
                   name="reviews_user_name"
                 />
                 <svg class="modal_div_icon" width="18" height="18">
@@ -424,6 +440,7 @@
               <div class="modal_div">
                 <input
                   class="modal_div_input"
+                  required
                   type="tel"
                   id="reviews_user_phone"
                   name="reviews_user_phone"
@@ -443,6 +460,7 @@
               <div class="modal_div">
                 <input
                   class="modal_div_input"
+                  required
                   type="email"
                   id="reviews_user_email"
                   name="reviews_user_email"
@@ -457,32 +475,41 @@
             <form class="backdrop_form"
               >Comment
 
-              <label class="backdrop_label" for="reviews_user-email"></label>
+              <label class="backdrop_label" for="reviews_user-comment"></label>
 
-              <div class="modal_div">
-                <input
-                  class="modal_div_input"
-                  type="text"
-                  id="reviews_user_comment"
-                  name="reviews_user_comment"
-                /> </div
+              <div class="modal_div modal_div_comment">
+                <textarea
+                  class="textarea"
+                  name="modal_textarea"
+                  id="modal_textarea"
+                  placeholder="Text input"
+                  cols="30"
+                  rows="10"
+                ></textarea></div
             ></form>
           </div>
           <div>
-            <label>
-              <input type="text" />
-              <span>
-                <svg class="" width="" height="">
-                  <use href=""></use>
+            <input
+              class="visually-hidden"
+              required
+              type="checkbox"
+              name="checkbox-label"
+              id="checkbox-label"
+            />
+            <label class="checkbox-label">
+              <span class="checkbox-span">
+                <svg class="checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-privacy link" href="" target="_blank" rel="noopener no-referrer"
+              I accept the terms and conditions of the<a class="checkbox-link kink" href=""
                 >Privacy Policy</a
-              >
-            </label>
+              ></label
+            >
           </div>
         </div>
+        <!-- Кнопка -->
+        <button type="button" class="hero-button button-modal">Send</button>
       </div>
     </div>
     <script src="./css/modal.js"></script>
